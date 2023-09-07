@@ -13,13 +13,12 @@ const images = [
   },
 ];
 
-const list = document.getElementsByClassName("gallery");
+const list = document.querySelector(".gallery");
 
 function listImg(arr) {
   const markup = arr
     .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" ></li>`)
     .join("");
   list.insertAdjacentHTML("beforeend", markup);
-  console.log(markup);
 }
 listImg(images);
