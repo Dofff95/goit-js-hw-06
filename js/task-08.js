@@ -1,14 +1,21 @@
-const registrationForm = document.querySelector(".login-form");
-const input = document.querySelector("input");
+const registration = {
+  registrationForm: document.querySelector(".login-form"),
+  input: document.querySelector("input"),
 
-registrationForm.addEventListener("submit", call);
+  init: function () {
+    this.registrationForm.addEventListener("submit", this.loginForm);
+  },
 
-function call(event) {
-  event.preventDefault();
-  const form = event.currentTarget;
-  const login = form.elements.email.value;
-  const password = form.elements.password.value;
-  if (login === "" || password === "") {
-    return alert("Всі поля повинні бути заповнені!");
-  }
-}
+  loginForm: function (event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const login = form.elements.email.value;
+    const password = form.elements.password.value;
+
+    if (login === "" || password === "") {
+      return alert("Всі поля повинні бути заповнені!");
+    } else {
+      console.log(`Email: ${login} Password: ${password}`);
+    }
+  },
+};
