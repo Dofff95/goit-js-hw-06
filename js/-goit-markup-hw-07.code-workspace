@@ -1,0 +1,26 @@
+{
+  "folders": [
+	{
+		"path": "../../../../Documents/GitHub/goit-markup-hw-02/goit-markup-hw-03/-goit-markup-hw-07"
+	},
+	{
+		"path": "../../../додатковий проект"
+	},
+	{
+		"path": "../../../../Documents/GitHub/goit-markup-hw-02/goit-markup-hw-03/ASSOL"
+	},
+	{
+		"path": "../../../js"
+	},
+	{
+		"path": "../../../POdcasts"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "goit-js-hw-06"
+  }
+}
