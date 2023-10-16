@@ -4,7 +4,7 @@ input.addEventListener("input", (event) => {
   if (input.value === "") {
     return (output.textContent = "Anonymous");
   } else {
-    output.textContent = event.currentTarget.value.trimStart().trimEnd();
+    output.textContent = event.currentTarget.value.trim();
     event.preventDefault(output);
   }
 });

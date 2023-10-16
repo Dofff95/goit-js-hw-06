@@ -1,9 +1,10 @@
 const input = document.querySelector("#validation-input");
-const lengthD = document.querySelector('[data-length="6"]');
-const getLeng = lengthD.getAttribute("data-length");
+const correctLength = parseInt(input.getAttribute('data-length'));
 
+input.addEventListener("blur", blur);
 function blur() {
-  if (input.value.length == getLeng) {
+  if (input.value.trim().length === correctLength) {
+    console.log(correctLength);
     input.classList.remove("invalid");
     return input.classList.add("valid");
   } else {
@@ -12,4 +13,3 @@ function blur() {
   }
 }
 
-input.addEventListener("blur", blur);
